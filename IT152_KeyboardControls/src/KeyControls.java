@@ -31,11 +31,16 @@ public class KeyControls extends JFrame {
 			p.add(letLabels [c - 'A']);		//Place the the label onto the JPanel
 		}
 		
-		p.setFocusable(true);		//Enable the JPanel to receive keyboard events by making it focusable
-		p.addKeyListener(new MyKList(letLabels));	//Attach a customized KeyListener to the JPanel
-		setSize(500,500);			//Specify the dimensions of the JFrame
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		//Define the action to be taken when the window close button is pressed
-		setVisible(true);				//Ensure that the JFrame is visible
+		//Enable the JPanel to receive keyboard events by making it focusable
+		p.setFocusable(true);		
+		//Attach a customized KeyListener to the JPanel
+		p.addKeyListener(new MyKList(letLabels));	
+		//Specify the dimensions of the JFrame
+		setSize(500,500);	
+		//Define the action to be taken when the window close button is pressed		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
+		//Ensure that the JFrame is visible
+		setVisible(true);				
 	}
 
 }
