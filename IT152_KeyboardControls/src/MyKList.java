@@ -6,7 +6,6 @@ import javax.swing.JComponent;
 class MyKList implements KeyListener {
 	
 	private JComponent[] letLabels;
-	
 	//Contructor that accepts an array comprising JComponents elements
 	public MyKList (JComponent[] letLabels) {
 		this.letLabels = letLabels;
@@ -19,7 +18,8 @@ class MyKList implements KeyListener {
 	}
 
 	@Override
-	public void keyPressed(KeyEvent e) {	//This method is invoked when a key is pressed down
+	//This method is invoked when a key is pressed down
+	public void keyPressed(KeyEvent e) {	
 		// TODO Auto-generated method stub
 		char keyChar = Character.toUpperCase(e.getKeyChar());	//Transform the key character to uppercase
 		if (e.getKeyCode() >= KeyEvent.VK_A && e.getKeyCode() <= KeyEvent.VK_Z) {	//Verify if the pressed key falls within the range of A-Z
@@ -30,7 +30,8 @@ class MyKList implements KeyListener {
 	}
 
 	@Override
-	public void keyReleased(KeyEvent e) {	//This method is invoked when a key is released
+	//This method is invoked when a key is released
+	public void keyReleased(KeyEvent e) {
 		// TODO Auto-generated method stub
 		char keyChar = Character.toUpperCase(e.getKeyChar());	//Transform the key character to uppercase
 		if (e.getKeyCode() >= KeyEvent.VK_A && e.getKeyCode() <= KeyEvent.VK_Z) {	//Verify if the pressed key falls within the range of A-Z

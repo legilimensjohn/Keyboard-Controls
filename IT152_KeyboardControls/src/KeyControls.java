@@ -12,13 +12,15 @@ public class KeyControls extends JFrame {
 	private JPanel p;
 	private JLabel[] letLabels;
 	
-	public KeyControls() {				//Instantiate the KeyControls class by calling its contructor, which extends JFrame
+	//Instantiate the KeyControls class by calling its contructor, which extends JFrame
+	public KeyControls() {			
 		super("Keyboard Controls");		//Assign a title to the JFrame
 		p = new JPanel (new GridLayout(2,14));	//Generate a JPanel that will hold JLabels in a grid layout
 		p.setBackground(Color.ORANGE);
 		add(p);							//Append the JPanel to the JFrame
 		
-		letLabels = new JLabel[26];		//Declare an array of JLabels that will represent letters from A to Z
+		//Declare an array of JLabels that will represent letters from A to Z
+		letLabels = new JLabel[26];		
 		for (char c = 'A'; c <= 'Z'; c++) {
 			letLabels [c - 'A'] = new JLabel(String.valueOf(c));	//Construct a label that will display the letter
 			letLabels [c - 'A'].setOpaque(true);		//Display the label's background color
