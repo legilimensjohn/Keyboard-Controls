@@ -15,7 +15,6 @@ class MyKList implements KeyListener {
 	@Override
 	public void keyTyped(KeyEvent e) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
@@ -34,9 +33,7 @@ class MyKList implements KeyListener {
 
 			//Change the the background color of the corresponding JComponent to a refreshing shade of orange
 			letLabels[index].setBackground(Color.ORANGE);	
-			
-		}
-		
+		}	
 	}
 
 	@Override
@@ -57,5 +54,4 @@ class MyKList implements KeyListener {
 			letLabels[index].setBackground(Color.CYAN);		
 		}
 	}
-
 }
