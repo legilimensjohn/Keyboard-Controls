@@ -8,6 +8,7 @@ public class KeyControls extends JFrame {
 	/**
 	 * 
 	 */
+
 	private static final long serialVersionUID = 1L;
 	private JPanel p;
 	private JLabel[] letLabels;
@@ -67,5 +68,6 @@ public class KeyControls extends JFrame {
 		//Ensure that the JFrame is visible
 		setVisible(true);				
 	}
+
 
 }
